@@ -1,0 +1,27 @@
+<p>What beautiful pipes!!!</p>
+<ul>
+    <!-- currency -->
+    <li> {{ price }} </li>
+    <li> {{ price | currency }} </li>
+    <li> {{ price | currency : code }} </li>
+    <li> {{ price | currency : 'EUR' }} </li>
+
+    <!-- LowerCasePipe & TitleCasePipe -->
+    <li> {{ code }} </li>
+    <li> {{ code | lowercase }} </li>
+    <li> {{ code | titlecase}} </li>
+
+    <!-- DatePipe -->
+    <li> {{ date }} </li>
+    <li> {{ date | date }} </li>
+    <li> {{ date | date:'shortTime' }} </li>
+    <li> {{ date | date:'d/MM/yyyy' }} </li>
+    <li> {{ date | date:'h:m:s' }} </li>
+    <li> {{ date | date:'hh # mm # ss' }} </li>
+    <li> {{ date | date:'fullDate' }} </li>
+
+    <!-- PercentPipe -->
+    <li> {{ price | percent}} </li>
+    <li> {{ price | percent:'4.3-5'}} </li>
+
+</ul>

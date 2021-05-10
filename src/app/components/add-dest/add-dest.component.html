@@ -1,0 +1,9 @@
+<h2>Destination Management🌎🌎🌎</h2>
+<ul>
+    <li *ngFor="let dest of dests">{{dest}}</li>
+</ul>
+<div>
+    <label for="dest">PRESS NEW DEST</label>
+    <input id="dest" type="text" placeholder="new destination" [(ngModel)]="newDest">
+    <button (click)="addDest()">ADD</button>
+</div>

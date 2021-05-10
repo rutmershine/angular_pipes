@@ -1,0 +1,14 @@
+<h2>Flights Management ✈🛩🚀</h2>
+<ul>
+<li *ngFor="let flight of flights">{{flight.passengerName}} | {{flight.dest}} | {{flight.flightNum}}</li>
+</ul>
+<div>
+    <input type="text" placeholder="passenger name" [(ngModel)]="passName"><br/>
+    <input type="text" placeholder="destination" [(ngModel)]="destination"><br/>
+    <input type="text" placeholder="flight number" [(ngModel)]="flightNumber"><br/>
+
+    <button (click)="booking()">BOOK FLIGHT</button>
+</div>
+
+
+<!-- <ul><li *ngFor="let d of dests"></li>{{d}}</ul> -->

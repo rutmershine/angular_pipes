@@ -1,0 +1,11 @@
+<span>הקש על צבע כדי לבחור אותו</span>
+<div id="options"> 
+    <button class="div_option" [style.background-color]="option" *ngFor="let option of guessColors" (click)="selectColor(option)"></button>
+</div>
+
+<span>הניחוש שלך: </span>
+<div id="selects">
+    <div class="div_selected" *ngFor="let guess of userGuess" [style.background-color]="guess"></div>
+
+</div>
+<button (click)="sendGuess()">GUESS</button>
